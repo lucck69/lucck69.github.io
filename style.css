@@ -1,0 +1,558 @@
+:root {
+    --dark-purple-color: #5927E5;
+    --light-purple-color: #7852E1;
+    --white-color: #F5F2F2;
+    --dark-grey-color: #4B4453;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+.hero-section h1 {
+    color: #4A1BCE;
+
+}
+
+h2 {
+    font-size: 50px;
+}
+
+section {
+    margin-top: 100px;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+}
+
+/* Main Section */
+header {
+    background: linear-gradient(180deg, rgba(76, 26, 219, 0.74) 45.32%, rgba(89, 39, 229, 0.51) 99.99%);
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 0;
+    padding: 36px 0;
+    z-index: 100;
+    transition: all 500ms ease;
+}
+
+nav.scrolled {
+    background: var(--dark-grey-color);
+    box-shadow: 0 16px 14px -8px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    top: 0;
+}
+
+nav.scrolled {
+    padding: 16px 100px;
+}
+
+nav .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #F5F2F2;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 54px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: #FAF4F4;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+
+.hero-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    padding-top: 67px;
+}
+
+.hero-section .left h1 {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 68px;
+    line-height: 80px;
+
+    /* or 125% */
+
+    color: #F5F2F2;
+    margin-bottom: 0;
+}
+
+.hero-section .left p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #F5F2F2;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 457px;
+}
+
+.hero-section .left {
+    width: 376.73px;
+}
+
+.hero-section .right img {
+    width: 630px;
+    height: 389px;
+    filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.25));
+    transform: rotate(20deg);
+}
+
+.btn {
+    padding: 16px 32px;
+    display: inline-block;
+    border-radius: 24px;
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--white-color);
+    background-color: var(--dark-purple-color);
+    text-decoration: none;
+    position: relative;
+}
+
+.btn:hover {
+    background-color: #654FA2;
+    color: #FFF;
+    opacity: 0.6;
+  transition: 0.3s;
+}
+
+
+
+.btn.light.enrol-icon::before {
+    content: url('imgaes/ChevronRight.svg');
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+}
+
+.btn.enrol-icon {
+    padding-left: 60px;
+}
+
+/*testimonials*/
+
+.testimonials-section .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    padding: 0;
+    color: #4B4453;
+
+}
+
+.testimonials-section .heading-textt {
+    color: #807A7A;
+}
+
+.testimonials-section .heading .dark-text {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+
+.testimonials-section .heading .heading-textt {
+    display: inline-block;
+    margin-bottom: 105px;
+}
+
+.testimonials-cards {
+    display: flex;
+    gap: 99px;
+}
+
+.testimonials-card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 331px;
+    height: 447px;
+
+    background: linear-gradient(180deg, rgba(76, 26, 219, 0.74) 0%, rgba(89, 39, 229, 0.51) 100%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+}
+
+.testimonials-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 190px;
+    margin-top: 1vh;
+    margin-bottom: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.testimonials-card .title {
+    border-radius: 90px;
+    margin-bottom: 5%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+
+    /* identical to box height */
+    text-align: center;
+
+    color: #EEE9E9;
+}
+
+.testimonials-card .description {
+    inline-size: 150px;
+    overflow-wrap: break-word;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+
+    color: #F5F2F2;
+}
+
+/* Buy Section  */
+
+.buy-section .light {
+    color: #D9D9D9;
+}
+
+.buy-section {
+    background: linear-gradient(180deg, rgba(76, 26, 219, 0.74) 45.32%, rgba(89, 39, 229, 0.51) 99.99%);
+    padding-top: 42px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.buy-section h2 {
+    text-align: center;
+}
+
+.buy-section .buy-cards {
+    display: flex;
+    gap: 254px;
+
+}
+
+.buy-section .title-card {
+    color: #FAF6F6;
+}
+
+.buy-section .price-card {
+    color: #FAF6F6;
+}
+
+.buy-section .buy-cards img {
+    width: 100%;
+}
+
+.buy-cards {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.buy-card {
+
+    background: linear-gradient(180deg, #4A1BCE 0%, #514671 96.35%);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 0px;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 186px;
+}
+
+.buy-card .title-card {
+    padding-left: 10px;
+    font-size: 20px;
+    margin: 0;
+
+}
+
+.buy-card .title-card p {
+    padding-left: 10px;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.buy-card .price-card {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.buy-card .price-card p {
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 0px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.buy-card .stars-card {
+    display: flex;
+    padding-left: 8px;
+}
+
+.buy-card .stars-card img {
+    padding-left: 8px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 30px;
+
+}
+
+.buy-card-internal {
+    text-align: center;
+    background: #5526D7;
+    border-radius: 24px;
+    justify-content: center;
+    padding: 16px 32px;
+    gap: 10px;
+    width: 100%;
+}
+
+.buy-card-internal-text {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.buy-card-internal a {
+    text-decoration: none;
+}
+
+/* App Section */
+
+.app-section {
+    text-align: center;
+    margin-bottom: 110px;
+    margin-top: 110px;
+}
+
+.app-section .app-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 24px;
+}
+
+.app-section .app-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #5927E5;
+    border-radius: 24px;
+    padding: 13px 25px;
+    gap: 42px;
+    margin-bottom: 112px;
+
+}
+
+.app-section .app-btn img {
+    width: 40px;
+    height: 40px;
+    margin-right: 42px;
+}
+
+.app-section .app-btn span {
+    font-weight: normal;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.app-section .heading {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    /* identical to box height, or 72px */
+    margin-bottom: 25px;
+    margin-top: 111px;
+
+    text-align: center;
+
+    color: #4B4453;
+
+}
+.app-btn .google_play_img img{
+
+    margin-right: 0px;
+}
+
+.app-section .heading-textt {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 120%;
+    /* or 24px */
+
+    text-align: center;
+
+    color: #807A7A;
+}
+
+.app-section .under-heading{
+    color: #807A7A;
+}
+
+/* Footer */
+
+footer {
+    background: var(--dark-grey-color);
+    color: #fff;
+    padding: 70px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+footer ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+footer ul li {
+    margin: 16px 0;
+}
+
+footer .links-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+}
+
+footer .social {
+    margin-left: 20px;
+}
+
+footer .social a {
+    margin-right: 28px;
+}
+
+footer form {
+    margin-left: 20px;
+    margin-top: 16px;
+    position: relative;
+}
+
+footer form input {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    border-radius: 8px;
+    padding: 8px 160px 8px 32px;
+    border: n1one;
+    width: 100%;
+    color: #FFFFFF;
+    background: rgba(217, 217, 217, 0.32);
+    border-radius: 24px;
+}
+
+footer form .submit-btn {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--dark-blue-color);
+    border-radius: 24px;
+    padding: 8px 32px;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    background: #D9D9D9;
+    cursor: pointer;
+}
+
+footer .copyright {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 120%;
+    /* identical to box height, or 24px */
+
+
+    color: #FFFFFF;
+}
+
+footer .social img {
+    width: 20px;
+    height: 20px;
+}
+
+::placeholder {
+    color: #FFFFFF;
+
+    opacity: 0.5;
+}
